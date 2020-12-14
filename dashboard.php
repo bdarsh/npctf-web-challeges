@@ -19,26 +19,28 @@
             <h3 class="masthead-brand">NPCTF</h3>
             <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link active" href="#">Log Out</a>
             </nav>
             </div>
             </header>
 
-            <main role="main" class="inner cover">
-            <h1 class="cover-heading">Wellcome Guys!</h1>
-            <p class="lead">Hope you are enjoying all the challenges so far. Lets, see what we got here on this page. Hint - Colours are beautifull!</p>
-            <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary">View Page Sourse</a>
-            </p>
-            </main>
-
-            <footer class="mastfoot mt-auto">
+            <main class="form-signin">
+  		<div class="card text-white bg-primary mb-3" style="max-width: 40rem;">
+  		<div class="card-header">Wellcome, Admin!</div>
+		<div class="card-body">
+    			<h5 class="card-title">Admin Panel.</h5>
+   			<p class="card-text">So far, you are doing a great work. Keep it up!To appreciate that here is your flag : NPCTF{GiF7_Fr0M_Th3_#AdM1n!}</p>
+  		</div>
+		</div>
+		</main>
+	<footer class="mastfoot mt-auto">
                 <div class="inner">
-                    <p>Made with ♥️ by #Itachi09.<!Nice here is the flag: NPCTF{HidDen_C0l@rs_@R3_Aw3soM3}></p>
+                    <p>Made with ♥️ by #Itachi09.</p>
                 </div>
-            </footer>
+        </footer>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
 </html>
+

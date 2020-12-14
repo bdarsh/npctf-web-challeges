@@ -24,21 +24,30 @@
             </div>
             </header>
 
-            <main role="main" class="inner cover">
-            <h1 class="cover-heading">Wellcome Guys!</h1>
-            <p class="lead">Hope you are enjoying all the challenges so far. Lets, see what we got here on this page. Hint - Colours are beautifull!</p>
-            <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary">View Page Sourse</a>
-            </p>
-            </main>
-
-            <footer class="mastfoot mt-auto">
+            <main class="form-signin">
+  		<form>
+    		<h1 class="h3 mb-3 fw-normal">Please Sign In</h1>
+		<label for="inputEmail" class="visually-hidden">Email Address</label>
+    		<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    		<label for="inputPassword" class="visually-hidden">Password</label>
+   		<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    		<div class="checkbox mb-3">
+      		<label>
+        	<input type="checkbox" value="remember-me"> Remember Me
+      		</label>
+    	    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign In</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+  </form>
+</main>
+	<footer class="mastfoot mt-auto">
                 <div class="inner">
-                    <p>Made with ♥️ by #Itachi09.<!Nice here is the flag: NPCTF{HidDen_C0l@rs_@R3_Aw3soM3}></p>
+                    <p>Made with ♥️ by #Itachi09.</p>
                 </div>
-            </footer>
+        </footer>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
 </html>
+
