@@ -19,7 +19,6 @@
             <h3 class="masthead-brand">NPCTF</h3>
             <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Login</a>
             </nav>
             </div>
             </header>

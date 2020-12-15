@@ -1,0 +1,4 @@
+User-agent: * Disallow: /login.php
+
+
+NPCTF{O0oPs!S@rRrY_No_G0_CraW1eR}
