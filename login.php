@@ -1,3 +1,21 @@
+<?php
+ session_start();
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    $username = $_POST['username'] ?? '';
+    $password = $_POST['password'] ?? '';
+
+
+    // temp hardcoded values while database is completed
+    define("USER","admin");
+    define("PASSWD",'$2y$10$DSNRkMfPC3PvkmA6v7rO5OxE1sE6tob/KQY2.z0tkW2nXVjFeW6L6'); // letmein
+
+    if(password_verify($password,PASSWD) && hash_equals($username, USER)) {
+       echo "Success!";}
+    else{
+       echo "Error!";}
+    }
+?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -24,20 +42,19 @@
             </header>
 
             <main class="form-signin">
-  		<form>
-    		<h1 class="h3 mb-3 fw-normal">Please Sign In</h1>
-		<label for="inputEmail" class="visually-hidden">Email Address</label>
-    		<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    		<label for="inputPassword" class="visually-hidden">Password</label>
-   		<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    		<div class="checkbox mb-3">
-      		<label>
-        	<input type="checkbox" value="remember-me"> Remember Me
-      		</label>
-    	    </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign In</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
-  </form>
+  		<form action="/login.php" method="post">
+  		<h1 class="h3 mb-3 fw-normal">Please Sign In!!</h1>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" name="username" id="username" aria-describedby="usernameHelp">
+                    <small id="usernameHelp" class="form-text text-muted">super secure login</small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" id="password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
 </main>
 	<footer class="mastfoot mt-auto">
                 <div class="inner">
