@@ -11,9 +11,12 @@
     define("PASSWD",'$2y$10$DSNRkMfPC3PvkmA6v7rO5OxE1sE6tob/KQY2.z0tkW2nXVjFeW6L6'); // letmein
 
     if(password_verify($password,PASSWD) && hash_equals($username, USER)) {
-       echo "Success!";}
+       header("Location:/dashboard.php");
+       echo "Success!";
+       }
     else{
        echo "Error!";}
+    	
     }
 ?>
 <!doctype html>
