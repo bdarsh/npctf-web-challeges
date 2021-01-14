@@ -1,6 +1,6 @@
 # CTF Web Challenges
 
-> This repo. is created for the testing purpose for CTF creation.
+> This repo. is created for the testing purpose for CTF creation
 
 ### Note:
 
